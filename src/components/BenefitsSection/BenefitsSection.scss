@@ -1,0 +1,35 @@
+#benefits__section {
+  height: 100%;
+  background-color: var(--light-grey);
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 48vw solid white;
+    border-right: 100vw solid var(--light-grey);
+    width: 0;
+    z-index: 100;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 48vw solid white;
+    border-right: 100vw solid var(--light-grey);
+    width: 0;
+    z-index: 100;
+  }  
+
+  .container {
+    display: grid;
+    row-gap: 3rem;
+    position: relative;
+    z-index: 500;
+  }
+}

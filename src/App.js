@@ -4,6 +4,8 @@ import HeroSection from './components/HeroSection/HeroSection';
 import AboutSection from './components/AboutSection/AboutSection';
 import PortfolioSection from './components/PortfolioSection/PortfolioSection';
 import ServicesSection from './components/ServicesSection/ServicesSection';
+import BenefitsSection from './components/BenefitsSection/BenefitsSection';
+import ContactSection from './components/ContactSection/ContactSection';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <AboutSection />
       <PortfolioSection />
       <ServicesSection />
+      <BenefitsSection />
+      <ContactSection />
     </>
   );
 }

@@ -42,7 +42,7 @@ function AboutSection() {
 
           <p>Em 2020, no entanto, colaborando em uma agência de marketing, tive meu primeiro contato com web design e descobri uma paixão por interfaces e programação front-end.</p>
 
-          <p>Comecei a estudar e criar sites responsivos e otimizados para SEO utilizando HTML, CSS e Javascript. Em meados de 2021 decidi mergulhar nesse mundo e me desenvolver em ReactJs, meu foco atualmente.</p>
+          <p>Comecei a estudar e criar sites responsivos e otimizados para SEO utilizando HTML, CSS e Javascript e, em meados de 2021, decidi mergulhar nesse mundo e me desenvolver em ReactJs, meu foco atualmente.</p>
         </div>
         <Button>{'contato >'}</Button>
 
