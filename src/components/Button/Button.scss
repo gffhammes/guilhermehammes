@@ -1,0 +1,25 @@
+.btn {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 500;
+  text-align: center;
+
+  &.btn--large {
+    padding: .75rem 1.5rem;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+  }
+
+  &.round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;    
+  }
+}

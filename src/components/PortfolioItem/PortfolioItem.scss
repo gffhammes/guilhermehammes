@@ -1,0 +1,30 @@
+.portfolio-item {
+  width: 100%;
+
+  img {
+    margin-bottom: -25%;
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+    object-position: center center;
+    -webkit-filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16)) drop-shadow(0px 3px 6px rgba(0,0,0,0.23));
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16)) drop-shadow(0px 3px 6px rgba(0,0,0,0.23));
+    z-index: 300;
+    position: relative;
+  }
+
+  .content {
+    background-color: var(--white);
+    padding: 7rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+    z-index: 200;
+    position: relative;
+    display: grid;
+    row-gap: 1rem;
+
+    h3 {
+      color: var(--orange);
+      font-weight: 400;
+    }
+  }
+}
