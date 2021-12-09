@@ -44,7 +44,7 @@ function AboutSection() {
 
           <p>Comecei a estudar e criar sites responsivos e otimizados para SEO utilizando HTML, CSS e Javascript e, em meados de 2021, decidi mergulhar nesse mundo e me desenvolver em ReactJs, meu foco atualmente.</p>
         </div>
-        <Button>{'contato >'}</Button>
+        <Button targetId='contact__section'>{'contato >'}</Button>
 
       </div>
     </section>

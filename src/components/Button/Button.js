@@ -19,7 +19,7 @@ const Button = ({
       spy={true}
       smooth={true}
       offset={-100}
-      className={`shadow-2 btn ${checkSize} ${isRound ? 'round' : ''}`}
+      className={`shadow-1 btn ${checkSize} ${isRound ? 'round' : ''}`}
     >
       {children}
     </Link>

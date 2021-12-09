@@ -12,11 +12,6 @@
 
 #root {
   height: 100%;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100%;
-  row-gap: 8rem;
 }
 
 body {
@@ -31,12 +26,45 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
 p {
   margin-bottom: 1rem;
 }
 
 .container {
-  margin: 0 1rem;
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+}
+
+.transition {
+  &.bottom--light-grey {
+    border-bottom: 20vh solid var(--light-grey);
+  }
+
+  &.right--white {
+    border-right: 99vw solid var(--white);
+  }
+  
+  &.bottom--white {
+    border-bottom: 20vh solid var(--white);
+  }
+  
+  &.left--light-grey {
+    border-left: 99vw solid var(--light-grey);
+  }
+}
+
+section {
+  //padding: 5rem 0;
+  min-height: calc(100% - 10rem);
+  display: grid;
+  align-items: center;
 }
 
 .pattern {

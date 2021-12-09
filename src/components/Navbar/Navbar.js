@@ -4,13 +4,23 @@ import { Link } from 'react-scroll';
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);  
+  const closeMobileMenu = () => setClick(false);
+
+  window.addEventListener("scroll", showMenuBackground);
+
+  function showMenuBackground() { 
+    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+    shrinkOn = 50;
+
+    distanceY > shrinkOn ? setScroll(true) : setScroll(false);
+  };
 
   return (
     <>
-      <nav className="navbar" id='navbar'>
+      <nav className={`navbar ${scroll ? 'bg--blue' : ''}`} id='navbar'>
         <div className="navbar-container container">
           <Link
             className='navbar-logo'
@@ -18,12 +28,12 @@ function Navbar() {
             to='hero__section'
             smooth={true}
           >
-            <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="Logo" />
+            <img src={process.env.PUBLIC_URL + '/images/logo-branca.png'} alt="Logo" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={click ? 'nav-menu active shadow-5' : 'nav-menu'}>
             <li className='nav-item'>
               <Link
                 activeClass='active'
@@ -42,7 +52,6 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
-                offset={-100}
               >
                 sobre-mim
               </Link>
@@ -57,6 +66,42 @@ function Navbar() {
                 offset={-100}
               >
                 portfolio
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                activeClass='active'
+                to='services__section'
+                className='nav-link'
+                smooth={true}
+                onClick={closeMobileMenu}
+                offset={-100}
+              >
+                serviços
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                activeClass='active'
+                to='benefits__section'
+                className='nav-link'
+                smooth={true}
+                onClick={closeMobileMenu}
+                offset={-100}
+              >
+                vantagens
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                activeClass='active'
+                to='contact__section'
+                className='nav-link'
+                smooth={true}
+                onClick={closeMobileMenu}
+                offset={-100}
+              >
+                contato
               </Link>
             </li>
           </ul>
