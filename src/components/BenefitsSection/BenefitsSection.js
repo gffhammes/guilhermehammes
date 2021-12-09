@@ -17,22 +17,22 @@ function BenefitsSection() {
           <BenefitsItem
             iconPath='/images/icone-vantagens-01.png'
             title='Responsividade'
-            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices nisi at malesuada egestas. Quisque ut vehicula lectus. Integer vitae quam erat.'
+            text='Hoje em dia não dá para pensar em um site que fica lindo no computador, mas desfigurado nos celulares, tablets e televisores. Por isso, todos os sites são testados e ajustados para ficarem lindos em qualquer dispositivo :)'
           />
           <BenefitsItem
             iconPath='/images/icone-vantagens-02.png'
             title='Mobile first'
-            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices nisi at malesuada egestas. Quisque ut vehicula lectus. Integer vitae quam erat.'
+            text='O celular é o principal meio de acesso à internet de 90% dos brasileiros. Não faz sentido desenvolver um site para computador e adapta-lo para celulares. A experiência dos sites que eu desenvolvo é pensada para os celulares e adaptada para outros dispositivos.'
           />
           <BenefitsItem
             iconPath='/images/icone-vantagens-03.png'
             title='Desempenho'
-            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices nisi at malesuada egestas. Quisque ut vehicula lectus. Integer vitae quam erat.'
+            text='Utilizo uma tecnologia que permite alterar o conteúdo da página sem precisar recarrega-la, o que gera um aumento de desempenho absurdo para o seu site, diminuindo a taxa de rejeição e aumentando suas conversões.'
           />
           <BenefitsItem
             iconPath='/images/icone-vantagens-04.png'
             title='SEO'
-            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices nisi at malesuada egestas. Quisque ut vehicula lectus. Integer vitae quam erat.'
+            text='Além da velocidade de carregamento, os sites desenvolvidos em linha de código têm uma semântica mais organizada, o que ajuda muito no seu SEO. Cuido de pequenos detalhes como o uso de palavras-chave e acessibilidade, que contam muito no seu desempenho.'
           />
         </div>
         <Button>{'orçamento >'}</Button>

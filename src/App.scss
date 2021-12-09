@@ -12,6 +12,7 @@
 
 #root {
   height: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -61,7 +62,7 @@ p {
 }
 
 section {
-  //padding: 5rem 0;
+  padding: 5rem 0;
   min-height: calc(100% - 10rem);
   display: grid;
   align-items: center;

@@ -87,7 +87,6 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
-                offset={-100}
               >
                 vantagens
               </Link>
@@ -99,7 +98,6 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
-                offset={-100}
               >
                 contato
               </Link>
