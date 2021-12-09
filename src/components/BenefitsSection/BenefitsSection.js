@@ -35,7 +35,7 @@ function BenefitsSection() {
             text='Além da velocidade de carregamento, os sites desenvolvidos em linha de código têm uma semântica mais organizada, o que ajuda muito no seu SEO. Cuido de pequenos detalhes como o uso de palavras-chave e acessibilidade, que contam muito no seu desempenho.'
           />
         </div>
-        <Button>{'orçamento >'}</Button>
+        <Button targetId='contact__section'>{'contato >'}</Button>
       </div>
     </section>
   )
