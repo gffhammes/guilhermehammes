@@ -31,7 +31,7 @@ function ServicesSection() {
             text='O e-commerce, como o nome sugere, é uma loja virtual. Nela você pode comercializar seus produtos 24h por dia e 7 dias por semana por um custo muito baixo! '
           />
         </div>
-        <Button>{'contato >'}</Button>
+        <Button targetId='contact__section'>{'contato >'}</Button>
       </div>
     </section>
   )

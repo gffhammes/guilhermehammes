@@ -17,7 +17,7 @@ function PortfolioSection() {
             imgPath='/images/portfolio-credestados.png'
             title='CredEstados'
             resume='Site responsivo para promotora de crédito de Balneário Camboriú/SC.'
-            stacks={['HTML', 'Sass', 'Javascript', 'ReactJs']}
+            stacks={['HTML', 'SCSS', 'Javascript', 'ReactJs']}
             siteAddress={'https://credestados.com.br/'}
           />
           <PortfolioItem

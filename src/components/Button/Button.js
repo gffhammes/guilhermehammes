@@ -19,7 +19,6 @@ const Button = ({
       to={targetId}
       spy={true}
       smooth={true}
-      offset={-100}
       className={`shadow-1 btn ${checkSize} ${isRound ? 'round' : ''}`}
       onClick={externalLink ? (() => window.open(externalLink, "_blank")) : null}
     >

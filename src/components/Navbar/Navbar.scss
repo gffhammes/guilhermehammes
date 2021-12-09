@@ -27,7 +27,7 @@
     }
 
     .nav-menu {
-      background-color: var(--orange);
+      background-color: var(--blue);
       transform: translateX(100%);
       transition: all .5s;
       position: absolute;
@@ -47,6 +47,34 @@
 
       .nav-item {
         list-style: none;
+        position: relative;
+        overflow-x: hidden;
+
+        .nav-link{
+          position: relative;
+          overflow: hidden;
+
+          &::before {
+            transition: all .3s;
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 1px);
+            top: 0;
+            left: -100%;
+            content: '';              
+            border-bottom: 1px solid white;
+          }
+
+          &:hover {
+            color: var(--orange);            
+          }
+
+          &.active {
+            &::before {
+              left: 0;
+            }
+          }
+        }    
       }
     }
 
@@ -82,6 +110,7 @@
           list-style: none;
           white-space: nowrap;
         }
+      
       }
   
       .menu-icon {

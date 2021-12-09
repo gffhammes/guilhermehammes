@@ -41,6 +41,7 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
+                spy={true}
               >
                 início
               </Link>
@@ -52,6 +53,7 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
+                spy={true}
               >
                 sobre-mim
               </Link>
@@ -63,6 +65,7 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
+                spy={true}
               >
                 portfolio
               </Link>
@@ -74,6 +77,7 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
+                spy={true}
               >
                 serviços
               </Link>
@@ -85,6 +89,7 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
+                spy={true}
               >
                 vantagens
               </Link>
@@ -96,6 +101,7 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
+                spy={true}
               >
                 contato
               </Link>

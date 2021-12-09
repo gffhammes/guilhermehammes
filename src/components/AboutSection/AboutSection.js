@@ -17,7 +17,7 @@ function AboutSection() {
   };
 
   return (
-    <section id='about__section'>
+    <section id='about__section' name='about__section'>
       <div className="container">
         <SectionTitle
           textAlign='align--left'
