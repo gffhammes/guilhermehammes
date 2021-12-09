@@ -18,12 +18,14 @@ function PortfolioSection() {
             title='CredEstados'
             resume='Site responsivo para promotora de crédito de Balneário Camboriú/SC.'
             stacks={['HTML', 'Sass', 'Javascript', 'ReactJs']}
+            siteAddress={'https://credestados.com.br/'}
           />
           <PortfolioItem
             imgPath='/images/portfolio-don-toro.png'
             title='Don Toro'
             resume='Site responsivo para açougue de Joinville/SC.'
             stacks={['HTML', 'CSS', 'Javascript']}
+            siteAddress={'https://dontoro.com.br/'}
           />
         </div>
       </div>

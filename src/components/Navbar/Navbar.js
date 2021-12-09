@@ -63,7 +63,6 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
-                offset={-100}
               >
                 portfolio
               </Link>
@@ -75,7 +74,6 @@ function Navbar() {
                 className='nav-link'
                 smooth={true}
                 onClick={closeMobileMenu}
-                offset={-100}
               >
                 serviços
               </Link>

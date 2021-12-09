@@ -62,8 +62,8 @@ p {
 }
 
 section {
-  padding: 5rem 0;
-  min-height: calc(100% - 10rem);
+  padding: 6rem 0;
+  min-height: calc(100% - 12rem);
   display: grid;
   align-items: center;
 }
@@ -76,6 +76,10 @@ section {
     right: 0;
     transform: translateY(75vh);
   }
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 h3 {

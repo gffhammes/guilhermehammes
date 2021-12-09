@@ -32,7 +32,8 @@ function AboutSection() {
             <h3>Guilherme Hammes</h3>
             <p>{currentAge()} anos</p>
             <p>Joinville/SC</p>
-            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/guilherme-felipe-ferreira-hammes/" target={'_blank'}><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/guilherme-felipe-ferreira-hammes/" target={'_blank'}><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
         <div className="text">

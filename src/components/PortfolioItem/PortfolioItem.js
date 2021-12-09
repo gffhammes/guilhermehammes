@@ -6,7 +6,8 @@ const PortfolioItem = ({
   imgPath,
   title,
   resume,
-  stacks
+  stacks,
+  siteAddress
 }) => {  
   return (
     <div className="portfolio-item">
@@ -19,7 +20,7 @@ const PortfolioItem = ({
             <span key={index} className='stack-item'>{stack}</span>
           ))}
         </div>
-        <Button>{'conhecer >'}</Button>
+        <Button externalLink={siteAddress}>{'conhecer >'}</Button>
       </div>
     </div>
   )

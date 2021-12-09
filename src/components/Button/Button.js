@@ -8,7 +8,8 @@ const Button = ({
   children,
   btnSize,
   targetId,
-  isRound
+  isRound,
+  externalLink
 }) => {
   const checkSize = SIZES.includes(btnSize) ? btnSize : SIZES[0];
 
@@ -20,6 +21,7 @@ const Button = ({
       smooth={true}
       offset={-100}
       className={`shadow-1 btn ${checkSize} ${isRound ? 'round' : ''}`}
+      onClick={externalLink ? (() => window.open(externalLink, "_blank")) : null}
     >
       {children}
     </Link>

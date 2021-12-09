@@ -11,7 +11,7 @@ function BenefitsSection() {
         <SectionTitle
           textAlign='align--center'
           subtitle='vantagens'
-          title='saiba os diferenciais dos sites que produzo'
+          title='saiba os diferenciais dos sites que eu desenvolvo'
         />
         <div className="benefits-items">
           <BenefitsItem

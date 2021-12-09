@@ -3,11 +3,11 @@ import './Footer.scss';
 
 function Footer() {
   return (
-    <section id='footer'>
+    <footer id='footer'>
       <div className="container">
         a
       </div>
-    </section>
+    </footer>
   )
 }
 

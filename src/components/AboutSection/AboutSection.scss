@@ -1,7 +1,7 @@
 #about__section {
   .container {
     display: grid;
-    row-gap: 3rem;
+    row-gap: 4rem;
     grid-template-areas:
     "a"
     "b"
@@ -17,6 +17,8 @@
       display: grid;
       grid-template-areas:
       "a b";
+      grid-template-columns: min-content max-content;
+      row-gap: 1rem;
       column-gap: 1rem;
       align-items: center;
 
@@ -37,15 +39,25 @@
         }
       }
 
-      .resume {
-        p {
-          margin: 0;
+      .resume {        
+        i {
+          font-size: 1.2rem;
+          color: var(--dark-grey);
+          margin-right: .5rem;
+        }
+
+        h3, p {
+          margin-bottom: 0.2rem;
         }
       }
     }
 
     .text {
       grid-area: c;
+
+      p:last-child {
+        margin: 0;
+      }
     }
 
     .btn {
@@ -54,12 +66,45 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
+  #about__section {
+    .container {
+      align-items: center;
+      grid-template-areas:
+      "a b"
+      "c c"
+      "d d";
+  
+      .title {
+        grid-area: a;
+      }
+  
+      .photo-resume {
+        grid-area: b;
+        justify-self: center;
+      }
+  
+      .text {
+        grid-area: c;
+  
+        p:last-child {
+          margin: 0;
+        }
+      }
+  
+      .btn {
+        grid-area: d;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
   #about__section {  
     .container {
       display: grid;
       justify-content: center;
-      row-gap: 3rem;
+      row-gap: 0;
       column-gap: 5rem;
       grid-template-columns: max-content 50ch;
       grid-template-areas:
@@ -69,14 +114,17 @@
   
       .title {
         grid-area: a;
+        margin-bottom: 4rem;
       }
   
       .photo-resume {
+        align-self: flex-start;
         grid-area: b;
         grid-template-areas:
         "a"
         "b";
         grid-template-rows: min-content min-content;
+        grid-template-columns: 1fr;
       }
   
       .text {
@@ -85,6 +133,7 @@
   
       .btn {
         grid-area: d;
+        align-self: flex-end;
       }
     }
   }
